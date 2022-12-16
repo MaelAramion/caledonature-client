@@ -16,6 +16,16 @@
   @media(max-width: 1250px) {
     width: calc((100%/2) - 3rem);
   }
+  h2{
+    @media(max-width: 1250px) {
+      font-size: 1.5rem;
+    }
+  }
+  p{
+    @media(max-width: 1250px) {
+      font-size: 1.5rem;
+    }
+  }
 }
 .delete{
   &:hover{
