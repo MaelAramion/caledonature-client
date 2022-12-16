@@ -5,7 +5,7 @@
   <mat-toolbar-row class="menu">
     <div class="menu-links">
       <a mat-button routerLinkActive="active-link" [routerLink]="'/accueil'">Accueil</a>
-      <a mat-button routerLinkActive="active-link" [routerLink]="'/flore'">Flore</a>
+      <a mat-button routerLinkActive="active-link" [routerLink]="'/flores'">Flore</a>
       <a *ngIf="user != null" mat-button routerLinkActive="active-link" [routerLink]="'/ajouter'">Ajouter</a>
       <a mat-button routerLinkActive="active-link" [routerLink]="'/contact'">Contact</a>
       <a *ngIf="user == null" mat-button routerLinkActive="active-link" [routerLink]="'/connexion'">Connexion</a>

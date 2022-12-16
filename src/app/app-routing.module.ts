@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'accueil', pathMatch: 'full'},
   {path: 'accueil', component: HomeComponent},
   {path: 'ajouter', component: FormComponent},
-  {path: 'flore', component: FloreListComponent},
+  {path: 'flores', component: FloreListComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'flore/update/:id', component: FormComponent},
   {path: 'flore/voir/:id', component: VoirComponent},
