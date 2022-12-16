@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "caledeflore": {
+      "hosting": {
+        "caleflore": [
+          "caledeflore"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "caledeflore"
+  }
+}

@@ -1,0 +1,16 @@
+<mat-card class="item" *ngIf="flore" (dblclick)="edit.emit(flore)">
+  <mat-card-header>
+    <h2>{{ flore.nom }}</h2>
+  </mat-card-header>
+  <img mat-card-image [src]="flore.illustration"/>
+  <mat-card-content>
+    <p>
+      {{flore.description.substr(0,186) + '...'}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="actions-button">
+    <button *ngIf="user != null" class="delete" mat-button (click)="delete(flore.id)">Supprimer</button>
+    <a *ngIf="user != null" class="update" mat-button [href]="'/flore/update/'+flore.id">Modifier</a>
+    <a class="see" mat-button [href]="'/flore/voir/'+flore.id">Voir</a>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,52 @@
+.flore{
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+  overflow-x: hidden;
+  margin: auto;
+  padding: 2rem 0;
+  animation: fadeIn 1s;
+  flex-wrap: wrap;
+  .text-flore{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    @media (max-width: 768px) {
+      padding: 0;
+      width: 100% !important;
+    }
+    @media(max-width: 1250px) {
+      padding-left: 1rem;
+      width: calc(50% - 1rem);
+    }
+    h2{
+      font-size: 1.5rem;
+      @media(max-width: 1250px) {
+        font-size: 1.5rem;
+      }
+    }
+    p{
+      margin-top: auto;
+      font-size: 1rem;
+      font-family: mainfont, sans-serif;
+      @media(max-width: 1250px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  img{
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}

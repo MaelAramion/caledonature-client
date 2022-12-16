@@ -1,0 +1,15 @@
+<mat-toolbar color="" class="navbar">
+  <mat-toolbar-row>
+    <h1>Calédo'Nature</h1>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="menu">
+    <div class="menu-links">
+      <a mat-button routerLinkActive="active-link" [routerLink]="'/accueil'">Accueil</a>
+      <a mat-button routerLinkActive="active-link" [routerLink]="'/flore'">Flore</a>
+      <a *ngIf="user != null" mat-button routerLinkActive="active-link" [routerLink]="'/ajouter'">Ajouter</a>
+      <a mat-button routerLinkActive="active-link" [routerLink]="'/contact'">Contact</a>
+      <a *ngIf="user == null" mat-button routerLinkActive="active-link" [routerLink]="'/connexion'">Connexion</a>
+      <a *ngIf="user != null" mat-button routerLinkActive="active-link" (click)="logout()">Déconnexion</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

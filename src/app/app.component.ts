@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {map, Observable} from "rxjs";
+import { AngularFireAuth} from "@angular/fire/compat/auth";
+import firebase from "firebase/compat";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'caleflore';
+  title = 'caledo\'nature';
+
+  user: Observable<firebase.User | null>
+
+  constructor(private afAuth: AngularFireAuth) {
+    this.user = this.afAuth.user;
+  }
 }

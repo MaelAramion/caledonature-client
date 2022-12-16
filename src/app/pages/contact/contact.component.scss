@@ -1,0 +1,31 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+}
+.contact{
+  margin: auto;
+  background: #688C6C;
+  color: white;
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  p{
+    font-family: mainfont, sans-serif;
+    a{
+      color: white;
+      text-decoration: none;
+      &:hover{
+        color: lighten(#688C6C,25);
+      }
+    }
+  }
+}

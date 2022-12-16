@@ -1,0 +1,28 @@
+
+.form_container {
+  width: 80%;
+  margin: 3rem auto;
+  padding: 1rem 3rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  .input_container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+    input{
+    }
+    .btn-connexion{
+      background: #688C6C;
+      color: white;
+      &:hover{
+        background: lighten(#688C6C, 10);
+      }
+    }
+  }
+}

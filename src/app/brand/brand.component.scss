@@ -1,0 +1,11 @@
+div{
+  height: 20rem;
+  background-image: url("../../assets/images/plant-brand-cover.jpg");
+  background-position: center center;
+  @media (max-width: 768px) {
+    height: 5rem !important;
+  }
+  @media(max-width: 1250px) {
+    height: 10rem !important
+  }
+}

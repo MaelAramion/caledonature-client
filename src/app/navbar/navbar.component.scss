@@ -1,0 +1,41 @@
+.navbar{
+  font-family: 'mainfont', sans-serif;
+  padding: 1rem 0;
+}
+.brand-title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.menu{
+  @media (max-width: 768px) {
+    height: auto;
+  }
+}
+.menu-links{
+  margin: auto;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+h1{
+  font-family: 'mainfont', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+a{
+  margin: 0 0.5rem;
+  @media (max-width: 768px) {
+    margin: 0 0.1rem;
+  }
+}
+.active-link{
+  background: #688C6C;
+  color: white;
+}
+
