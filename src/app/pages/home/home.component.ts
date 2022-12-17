@@ -15,11 +15,14 @@ export class HomeComponent implements OnInit {
 
   progress_value: number = 0;
 
+  description: string = "";
+
   constructor(private floreService: FloreService) {
     this.floreService.getFloresObservable().pipe(elements => elements).subscribe(elements => {
       elements.forEach((element)=>{
         this.flores.push(element);
         this.flore = this.flores[this.getRandomInt(this.flores.length)];
+        this.description = this.flore.description?.substr(0,350) + '...'
       });
     });
 

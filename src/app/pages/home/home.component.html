@@ -6,7 +6,7 @@
       <img [src]="flore?.illustration"/>
       <div class="text-flore">
         <h2>{{ flore?.nom }}</h2>
-        <p>{{ flore?.description?.substr(0,350) + '...' }}</p>
+        <p>{{ description }}</p>
         <a class="aller" mat-button [href]="'/flore/voir/' + flore?.id">Aller</a>
       </div>
       <mat-progress-bar class="progress-bar" mode="determinate" [value]="progress_value"></mat-progress-bar>
