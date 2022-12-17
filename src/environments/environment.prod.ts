@@ -1,12 +1,12 @@
 export const environment = {
   firebase: {
-    projectId: 'caledeflore',
-    appId: '1:704982989207:web:6ee76be40dfbbb11026cd2',
-    storageBucket: 'caledeflore.appspot.com',
-    apiKey: 'AIzaSyClqC1liNEqT-6YRGxS0MefpGfjWouomOQ',
-    authDomain: 'caledeflore.firebaseapp.com',
-    messagingSenderId: '704982989207',
-    measurementId: 'G-HXEDQ02CD3',
+    apiKey: "AIzaSyCAlRDtFfsOArOd9-At9jVepV0_dBbt0A4",
+    authDomain: "angulararc2proj2.firebaseapp.com",
+    projectId: "angulararc2proj2",
+    storageBucket: "angulararc2proj2.appspot.com",
+    messagingSenderId: "335832420514",
+    appId: "1:335832420514:web:c1ec57143b74cf945ac7fb",
+    measurementId: "G-8K6FQ09JGJ"
   },
   production: true
 };
